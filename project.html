@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mansi-Utane portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(6, 6, 31);
+        color: white;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100px;
+        background-color: rgb(32, 4, 68);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(110, 110, 237);
+        font-size: 1.01rem;
+      }
+      main hr {
+        border: 0;
+        background: #9c97f1;
+        height: 1.2px;
+        margin: 40px 84px;
+      }
+      .left {
+        font-size: 1.5rem;
+      }
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 23px 0;
+      }
+      .firstSection > div {
+        width: 30%;
+      }
+      .leftSection {
+        /* background-color: rgb(218, 202, 35); */
+        font-size: 1.5rem;
+        margin: 70px 0;
+        width: 34px;
+        font-size: 34px;
+      }
+      .buttons {
+        padding: 50px 0;
+      }
+      .btn {
+        padding: 12px;
+        background-color: #1e2167;
+        color: white;
+        border: 2px solid white;
+        border-radius: 6px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .rightsection img {
+        width: 80%;
+        margin: 50px 0;
+      }
+      .purple {
+        color: rgb(170, 107, 228);
+      }
+      .text-grey {
+        color: gray;
+      }
+      #element {
+        color: rgb(170, 107, 228);
+      }
+      .SecondSection {
+        max-width: 100vw;
+        margin: auto;
+        height: 80vh;
+      }
+      .SecondSection h1 {
+        font-size: 1.8rem;
+      }
+      .SecondSection .box {
+        background: white;
+        width: 97vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+      }
+      .SecondSection .vertical {
+        height: 96px;
+        width: 1px;
+        background-color: white;
+        margin: 0 6vw;
+      }
+      .image-top {
+        width: 23px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+      }
+      .vertical-title {
+        font-size: 14px;
+        position: relative;
+        top: 75px;
+        width: 150px;
+      }
+      .vertical-desc {
+        position: relative;
+        top: 100px;
+        color: gray;
+        width: 150px;
+        font-size: 10px;
+      }
+      footer {
+        background-color: #0e0e1a;
+      }
+      .footer {
+        display: flex;
+        padding: 23px 122px;
+        justify-content: space-evenly;
+      }
+      .footer ul {
+        list-style: none;
+      }
+      .footer > div {
+        width: 123px;
+      }
+      .footer-rights {
+        text-align: center;
+        color: gray;
+        padding: 12px;
+      }
+      @media screen and (max-width: 800px) {
+        body {
+          /* background-color: rgb(196, 21, 21); */
+        }
+        .box {
+          flex-direction: column;
+        }
+        .vertical-desc.vertical-title {
+          left: 77px;
+        }
+        .SecondSection.box {
+          width: 50vw;
+        }
+        .SecondSection.vertical {
+          height: unset;
+        }
+        nav {
+          flex-direction: column;
+        }
+        footer {
+          display: none;
+        }
+        .firstSection {
+          flex-direction: column-reverse;
+        }
+        .leftSection {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .rightsection {
+          width: 721px !important;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .rightsection img{
+          width: 45vw;
+          margin-bottom: 73px;
+        }
+        .SecondSection {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          
+        }
+        body {
+          min-width: fit-content;
+        }
+        .image-top{
+          top: 122px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Mansi's portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Skils</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Resume</a></li>
+            <li><a href="/">ContactMe</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          <div>Hi, My name is <span class="purple">Mansi</span></div>
+          <div>and I am a passionate</div>
+          <span id="element"></span>
+          <div class="buttons">
+            <button class="btn">Download Resume</button>
+            <button class="btn">Visit Github</button>
+          </div>
+        </div>
+        <div class="rightsection">
+          <img src="web.png" alt="" />
+        </div>
+      </section>
+      <hr />
+      <section class="SecondSection">
+        <span class="text-grey">What I done so far</span>
+        <h1>Work Experience</h1>
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="html.jpeg" alt="" />
+            <div class="vertical-title">HTML Developer</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptas, officiis soluta assumenda rem natus quod?
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="css.jpeg" alt="" />
+            <div class="vertical-title">HTML Developer</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptas, officiis soluta assumenda rem natus quod?
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="Javascript.jpeg" alt="" />
+            <div class="vertical-title">HTML Developer</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptas, officiis soluta assumenda rem natus quod?
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="html.jpeg" alt="" />
+            <div class="vertical-title">HTML Developer</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptas, officiis soluta assumenda rem natus quod?
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="html.jpeg" alt="" />
+            <div class="vertical-title">HTML Developer</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptas, officiis soluta assumenda rem natus quod?
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="html.jpeg" alt="" />
+            <div class="vertical-title">HTML Developer</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptas, officiis soluta assumenda rem natus quod?
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Mansi's Developer portfolio</h3>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="footer-third">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="footer-fourth">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-rights">
+        Copyright &#169;mansiportfolio.com | All rights reserved
+      </div>
+
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "Web Designer", "C++", "Python."],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
