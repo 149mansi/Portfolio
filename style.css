@@ -1,6 +1,6 @@
 :root {
-    --variable-name: value;
-    --font-family: sans-serf;
+  --variable-name: value;
+  --font-family: sans-serf;
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
@@ -90,7 +90,7 @@
     width: 37.5rem;
 
   }
-  /* .bio{
+  .bio{
     width: 25rem;
     padding: 0.625rem;
     border-radius: 6px;
@@ -101,9 +101,9 @@
   } 
   .bio p{
     line-height: var(--line-height);
-    padding: 0.3rem 0; */
-  /* }  */
-  /* .home{
+    padding: 0.3rem 0; 
+   }  
+   /* .home{
     position: relative;
     width: 100%;
     justify-content: space-between;
@@ -119,7 +119,7 @@
   }
   .home-content{
     max-width: 600px;
-  } */
+  }
   .home-content h3{
 font-size: 32px;
 font-weight: 700;
@@ -144,7 +144,7 @@ margin: -3px 0;
 .more-about p{
   line-height: var(--line-height);
   padding: 0.4rem;
-}
+} */
 .skills{
   max-width: 68.75rem;
   margin: auto;
