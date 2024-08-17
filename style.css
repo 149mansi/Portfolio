@@ -15,6 +15,10 @@
   --transition: 0.3s;
 
   }
+  selector {
+    property: var(--variable-name);
+  }
+
   html{
     scroll-behavior: smooth;
   }
@@ -103,7 +107,7 @@
     line-height: var(--line-height);
     padding: 0.3rem 0; 
    }  
-   /* .home{
+    .home{
     position: relative;
     width: 100%;
     justify-content: space-between;
@@ -117,14 +121,14 @@
     padding: 70px 10% 0;
 
   }
-  .home-content{
+  /* .home-content{
     max-width: 600px;
   }
   .home-content h3{
 font-size: 32px;
 font-weight: 700;
-  }
-  .home-content h1{
+  } */
+  /* .home-content h1{
     font-size: 56px;
     font-weight: 700;
 margin: -3px 0;
@@ -132,19 +136,21 @@ margin: -3px 0;
   }
   .home-content p{
     font-size: 20px;
+  } */
+  .more-about {
+    background-color: var(--bg-color);
+    padding: 1rem 6rem;
   }
-.more-about{
-  background-color: var(--bg-color);
-  padding: 1rem 6rem;
-}
-.more-about h2{
-  margin-bottom: var(--bottom-margin);
-  text-align: center;
-}
-.more-about p{
-  line-height: var(--line-height);
-  padding: 0.4rem;
-} */
+  
+  .more-about h2 {
+    margin-bottom: var(--bottom-margin);
+    text-align: center;
+  }
+  
+  .more-about p {
+    line-height: var(--line-height);
+    padding: 0.4rem;
+  }
 .skills{
   max-width: 68.75rem;
   margin: auto;
