@@ -1,31 +1,50 @@
-// Nav hamburgerburger selections
-const burger = document.querySelector("#burger-menu");
-const ul = document.querySelector("nav ul");
-const nav = document.querySelector("nav");
+const sideMenu = document.querySelector('#sideMenu');
+const navBar = document.querySelector("nav");
+const navLinks= document.querySelector("nav ul");
 
-// Scroll to top selection
-const scrollUp = document.querySelector("#scroll-up");
+function openMenu(){
+    sideMenu.style.transform = 'translateX(-16rem)';
 
-// Select nav links
-const navLink = document.querySelectorAll(".nav-link");
+}
 
-// Hamburger menu function
-burger.addEventListener("click", () => {
-  ul.classList.toggle("show");
-});
+function closeMenu(){
+    sideMenu.style.transform = 'translateX(16rem)';
+}
 
-// Close hamburger menu when a link is clicked
-navLink.forEach((link) =>
-  link.addEventListener("click", () => {
-    ul.classList.remove("show");
-  })
-);
 
-// scroll to top functionality
-scrollUp.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    left: 0,
-    behavior: "smooth",
-  });
-});
+window.addEventListener('scroll',()=>{
+    if(scrollY>50){
+        navBar.classList.add('bg-white','bg-opacity-50','backdrop-blur-lg','shadow-sm','dark:bg-darkTheme', 'dark:shadow-white/20');
+
+        navLinks.classList.remove('bg-white', 'shadow-sm', 'bg-opacity-50', 'dark:border','dark:border-white/50',"dark:bg-transparent");
+
+    }
+    else{
+        navBar.classList.remove('bg-white','bg-opacity-50','backdrop-blur-lg','shadow-sm','dark:bg-darkTheme', 'dark:shadow-white/20');
+        
+        navLinks.classList.add('bg-white','bg-opacity-50','backdrop-blur-lg','shadow-sm','dark:border','dark:border-white/50',"dark:bg-transparent");
+
+    }
+})
+
+// Light mode and dark mode
+
+// On page load or when changing themes, best to add inline in `head` to avoid FOUC
+if (localStorage.theme==='dark'|| (!('theme' in localStorage)&&window.matchMedia('(prefers-color-scheme:dark)').matches)){
+    document.documentElement.classList.add('dark')
+    
+}
+else{
+    document.documentElement.classList.remove('dark')
+}
+
+function toggleTheme(){
+    document.documentElement.classList.toggle('dark');
+    if (document.documentElement.classList.contains('dark')) {
+        localStorage.theme='dark';
+        
+    }
+    else{
+        localStorage.theme='light';
+    }
+}
