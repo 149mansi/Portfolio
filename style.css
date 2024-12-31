@@ -1,0 +1,115 @@
+.projects-section {
+    padding: 40px 10%;
+    text-align: center;
+  }
+
+  .projects-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .projects-section p {
+    
+        font-size: 10rem; /* Sets the font size */
+        /* margin-bottom: 30px; Matches mb-10 (10 * 3px = 30px) */
+        color: #ccc; /* Matches text color */
+        max-width: 640px; /* Matches max-w-2xl (2xl = 640px) */
+        font-family: 'Ovo', serif; /* Matches font-Ovo */
+        margin-left: auto; /* Center aligns within container */
+        margin-right: auto;
+        text-align: center; /* Ensures the text is centered */
+        font-weight: 400;
+      
+  }
+
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+  .project-card {
+    /* background-color: #00294d; */
+    border-radius: 10px;
+    /* padding: 20px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* transition: transform 0.3s, box-shadow 0.3s; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 48px 32px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    
+  }
+
+  .project-card:hover {
+    background-color: #f5f5f5;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.8);
+  }
+
+  .dark .project-card:hover {
+    background-color: var(--darkHover); /* Matches dark:hover:bg-darkHover */
+    box-shadow: 0 10px 15px rgba(255, 255, 255, 0.2); /* Matches dark:hover:shadow-white */
+    
+  }
+
+  .project-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+
+  .project-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .project-card p {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    color: #aaa;
+  }
+
+  .project-card .buttons {
+    display: flex;
+    gap: 10px;
+  }
+
+  .project-card .buttons a {
+    text-decoration: none;
+    color: white;
+    /* background-color: #0059b3; */
+    background-color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+  justify-content: center;
+  margin: auto;
+  border: 0.5px solid transparent;
+  background-color: rgba(0, 0, 0, 0.8);
+
+  }
+
+  .project-card .buttons a:hover {
+    background-color: #000;
+  }
+
+  .dark .project-card .buttons a {
+    background-color: transparent; /* Matches dark:bg-transparent */
+    border: 0.5px solid #fff; /* Matches dark:border-[0.5px] */
+  }
+
+  .dark .project-card .buttons a:hover {
+    background-color: var(--darkHover); /* Matches dark:hover:bg-darkHover */
+  }
